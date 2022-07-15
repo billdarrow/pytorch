@@ -187,7 +187,7 @@ jobs:
       - name: Test Pytorch binary
         uses: pytorch/.github/actions/test-pytorch-binary
         with:
-          working-directory: pytorch
+          working-directory: ./pytorch
           docker-image: ${{ inputs.DOCKER_IMAGE }}
 
       - name: Hold runner for 2 hours or until ssh sessions have drained
