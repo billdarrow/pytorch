@@ -167,16 +167,14 @@ jobs:
         uses: ./pytorch/.github/actions/set-windows-runner-binary-build-vars
 
       - name: Populate binary env
-        working-directory: pytorch
         shell: bash
         run: |
-          ".circleci/scripts/binary_populate_env.sh"
+          "${PYTORCH_ROOT}/.circleci/scripts/binary_populate_env.sh"
 
       - name: Build PyTorch binary
-        working-directory: pytorch
         shell: bash
         run: |
-          ".circleci/scripts/binary_windows_build.sh"
+          "${PYTORCH_ROOT}/.circleci/scripts/binary_windows_build.sh"
 
       - name: Upload artifact to s3
         uses: seemethere/upload-artifact-s3@v5
