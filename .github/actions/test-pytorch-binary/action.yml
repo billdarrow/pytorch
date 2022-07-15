@@ -6,15 +6,20 @@ inputs:
   docker-image:
     description: the image to pull
     required: true
+  working-directory:
+    description: The pytorch repo directory
+    default: .
+    required: false
 
 runs:
   using: composite
   steps:
     - name: Pull Docker image
-      uses: ./.github/actions/pull-docker-image
+      uses: ${{ inputs.working-directory }}/.github/actions/pull-docker-image
       with:
         docker-image: ${{ inputs.docker-image }}
     - name: Test PyTorch binary
+      working-directory: ${{ inputs.working-directory }}
       run: |
         set -x
         # shellcheck disable=SC2086,SC2090
