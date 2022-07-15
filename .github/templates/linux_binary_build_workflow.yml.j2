@@ -88,11 +88,12 @@ jobs:
       - name: ROCm set GPU_FLAG
         run: |
           echo "GPU_FLAG=--device=/dev/mem --device=/dev/kfd --device=/dev/dri --group-add video --group-add daemon" >> "${GITHUB_ENV}"
-      - name: Test Pytorch binary
-        uses: ./.github/actions/test-pytorch-binary
-        working-directory: pytorch/
+      - name: Pull Docker image
+        uses: ./pytorch/.github/actions/pull-docker-image
         with:
           docker-image: !{{ config["container_image"] }}
+      - name: Test Pytorch binary
+        uses: ./pytorch/.github/actions/test-pytorch-binary
       !{{ common.teardown_rocm_linux() }}
 {%- endif %}
 

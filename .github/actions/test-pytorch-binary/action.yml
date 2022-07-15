@@ -2,22 +2,9 @@ name: Test pytorch binary
 
 description: Pulls the docker image and tests the pytorch binary using it. All env variable referenced in the "Test PyTorch binary" step must be set in the GITHUB_ENV file
 
-inputs:
-  docker-image:
-    description: the image to pull
-    required: true
-  working-directory:
-    description: The pytorch repo directory
-    default: .
-    required: false
-
 runs:
   using: composite
   steps:
-    - name: Pull Docker image
-      uses: ${{ inputs.working-directory }}/.github/actions/pull-docker-image
-      with:
-        docker-image: ${{ inputs.docker-image }}
     - name: Test PyTorch binary
       shell: bash
       run: |

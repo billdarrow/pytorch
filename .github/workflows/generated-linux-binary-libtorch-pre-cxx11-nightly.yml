@@ -1139,11 +1139,12 @@ jobs:
       - name: ROCm set GPU_FLAG
         run: |
           echo "GPU_FLAG=--device=/dev/mem --device=/dev/kfd --device=/dev/dri --group-add video --group-add daemon" >> "${GITHUB_ENV}"
-      - name: Test Pytorch binary
-        uses: ./.github/actions/test-pytorch-binary
-        working-directory: pytorch/
+      - name: Pull Docker image
+        uses: ./pytorch/.github/actions/pull-docker-image
         with:
           docker-image: pytorch/manylinux-builder:rocm5.0
+      - name: Test Pytorch binary
+        uses: ./pytorch/.github/actions/test-pytorch-binary
       - name: Kill containers, clean up images
         if: always()
         run: |
@@ -1281,11 +1282,12 @@ jobs:
       - name: ROCm set GPU_FLAG
         run: |
           echo "GPU_FLAG=--device=/dev/mem --device=/dev/kfd --device=/dev/dri --group-add video --group-add daemon" >> "${GITHUB_ENV}"
-      - name: Test Pytorch binary
-        uses: ./.github/actions/test-pytorch-binary
-        working-directory: pytorch/
+      - name: Pull Docker image
+        uses: ./pytorch/.github/actions/pull-docker-image
         with:
           docker-image: pytorch/manylinux-builder:rocm5.0
+      - name: Test Pytorch binary
+        uses: ./pytorch/.github/actions/test-pytorch-binary
       - name: Kill containers, clean up images
         if: always()
         run: |
@@ -1423,11 +1425,12 @@ jobs:
       - name: ROCm set GPU_FLAG
         run: |
           echo "GPU_FLAG=--device=/dev/mem --device=/dev/kfd --device=/dev/dri --group-add video --group-add daemon" >> "${GITHUB_ENV}"
-      - name: Test Pytorch binary
-        uses: ./.github/actions/test-pytorch-binary
-        working-directory: pytorch/
+      - name: Pull Docker image
+        uses: ./pytorch/.github/actions/pull-docker-image
         with:
           docker-image: pytorch/manylinux-builder:rocm5.1.1
+      - name: Test Pytorch binary
+        uses: ./pytorch/.github/actions/test-pytorch-binary
       - name: Kill containers, clean up images
         if: always()
         run: |
@@ -1565,11 +1568,12 @@ jobs:
       - name: ROCm set GPU_FLAG
         run: |
           echo "GPU_FLAG=--device=/dev/mem --device=/dev/kfd --device=/dev/dri --group-add video --group-add daemon" >> "${GITHUB_ENV}"
-      - name: Test Pytorch binary
-        uses: ./.github/actions/test-pytorch-binary
-        working-directory: pytorch/
+      - name: Pull Docker image
+        uses: ./pytorch/.github/actions/pull-docker-image
         with:
           docker-image: pytorch/manylinux-builder:rocm5.1.1
+      - name: Test Pytorch binary
+        uses: ./pytorch/.github/actions/test-pytorch-binary
       - name: Kill containers, clean up images
         if: always()
         run: |
