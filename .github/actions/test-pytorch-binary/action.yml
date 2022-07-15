@@ -19,6 +19,7 @@ runs:
       with:
         docker-image: ${{ inputs.docker-image }}
     - name: Test PyTorch binary
+      shell: bash
       run: |
         set -x
         # shellcheck disable=SC2086,SC2090
