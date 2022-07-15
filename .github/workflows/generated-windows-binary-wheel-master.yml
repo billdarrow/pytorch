@@ -61,6 +61,6 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: wheel-py3_7-cuda11_3
       build_environment: windows-binary-wheel
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}

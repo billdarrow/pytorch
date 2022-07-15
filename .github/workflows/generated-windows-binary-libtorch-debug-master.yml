@@ -67,6 +67,6 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cpu-shared-with-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}

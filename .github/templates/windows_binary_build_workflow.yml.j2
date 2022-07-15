@@ -71,9 +71,9 @@ jobs:
       build_name: !{{ config["build_name"] }}
       build_environment: !{{ build_environment }}
       {%- if config["gpu_arch_type"] == "cuda" %}
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
       {%- else %}
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
       {%- endif %}
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}

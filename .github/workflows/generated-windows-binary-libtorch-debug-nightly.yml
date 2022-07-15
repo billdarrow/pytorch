@@ -72,7 +72,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cpu-shared-with-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cpu-shared-with-deps-debug-upload:  # Uploading
@@ -138,7 +138,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cpu-shared-without-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cpu-shared-without-deps-debug-upload:  # Uploading
@@ -204,7 +204,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cpu-static-with-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cpu-static-with-deps-debug-upload:  # Uploading
@@ -270,7 +270,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cpu-static-without-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cpu-static-without-deps-debug-upload:  # Uploading
@@ -338,7 +338,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_3-shared-with-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_3-shared-with-deps-debug-upload:  # Uploading
@@ -407,7 +407,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_3-shared-without-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_3-shared-without-deps-debug-upload:  # Uploading
@@ -476,7 +476,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_3-static-with-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_3-static-with-deps-debug-upload:  # Uploading
@@ -545,7 +545,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_3-static-without-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_3-static-without-deps-debug-upload:  # Uploading
@@ -614,7 +614,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_6-shared-with-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_6-shared-with-deps-debug-upload:  # Uploading
@@ -683,7 +683,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_6-shared-without-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_6-shared-without-deps-debug-upload:  # Uploading
@@ -752,7 +752,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_6-static-with-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_6-static-with-deps-debug-upload:  # Uploading
@@ -821,7 +821,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: libtorch-cuda11_6-static-without-deps-debug
       build_environment: windows-binary-libtorch-debug
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   libtorch-cuda11_6-static-without-deps-debug-upload:  # Uploading

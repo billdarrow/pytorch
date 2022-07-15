@@ -64,7 +64,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: conda-py3_7-cpu
       build_environment: windows-binary-conda
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_7-cpu-upload:  # Uploading
@@ -120,7 +120,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: conda-py3_7-cuda11_3
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_7-cuda11_3-upload:  # Uploading
@@ -177,7 +177,7 @@ jobs:
       DESIRED_PYTHON: "3.7"
       build_name: conda-py3_7-cuda11_6
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_7-cuda11_6-upload:  # Uploading
@@ -232,7 +232,7 @@ jobs:
       DESIRED_PYTHON: "3.8"
       build_name: conda-py3_8-cpu
       build_environment: windows-binary-conda
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_8-cpu-upload:  # Uploading
@@ -288,7 +288,7 @@ jobs:
       DESIRED_PYTHON: "3.8"
       build_name: conda-py3_8-cuda11_3
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_8-cuda11_3-upload:  # Uploading
@@ -345,7 +345,7 @@ jobs:
       DESIRED_PYTHON: "3.8"
       build_name: conda-py3_8-cuda11_6
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_8-cuda11_6-upload:  # Uploading
@@ -400,7 +400,7 @@ jobs:
       DESIRED_PYTHON: "3.9"
       build_name: conda-py3_9-cpu
       build_environment: windows-binary-conda
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_9-cpu-upload:  # Uploading
@@ -456,7 +456,7 @@ jobs:
       DESIRED_PYTHON: "3.9"
       build_name: conda-py3_9-cuda11_3
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_9-cuda11_3-upload:  # Uploading
@@ -513,7 +513,7 @@ jobs:
       DESIRED_PYTHON: "3.9"
       build_name: conda-py3_9-cuda11_6
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_9-cuda11_6-upload:  # Uploading
@@ -568,7 +568,7 @@ jobs:
       DESIRED_PYTHON: "3.10"
       build_name: conda-py3_10-cpu
       build_environment: windows-binary-conda
-      runs-on: windows.4xlarge
+      runs_on: windows.4xlarge
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_10-cpu-upload:  # Uploading
@@ -624,7 +624,7 @@ jobs:
       DESIRED_PYTHON: "3.10"
       build_name: conda-py3_10-cuda11_3
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_10-cuda11_3-upload:  # Uploading
@@ -681,7 +681,7 @@ jobs:
       DESIRED_PYTHON: "3.10"
       build_name: conda-py3_10-cuda11_6
       build_environment: windows-binary-conda
-      runs-on: windows.8xlarge.nvidia.gpu
+      runs_on: windows.8xlarge.nvidia.gpu
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
   conda-py3_10-cuda11_6-upload:  # Uploading
