@@ -66,12 +66,12 @@ jobs:
       # libtorch builds take a long time on github hosted runners
       timeout-minutes: 720
       {%- else %}
-      timeout-minutes: !{{ common.timeout_minutes }}
+      timeout_minutes: !{{ common.timeout_minutes }}
       {%- endif %}
       {%- if config["package_type"] == "libtorch" %}
-      runs-on: macos-10.15
+      runs_on: macos-10.15
       {%- else %}
-      runs-on: macos-12
+      runs_on: macos-12
       {%- endif %}
       # For sccache access (only on non-forked PRs)
     secrets:

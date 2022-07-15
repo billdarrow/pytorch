@@ -52,7 +52,7 @@ jobs:
       build_environment: macos-binary-libtorch-cxx11-abi
       # libtorch builds take a long time on github hosted runners
       timeout-minutes: 720
-      runs-on: macos-10.15
+      runs_on: macos-10.15
       # For sccache access (only on non-forked PRs)
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -101,7 +101,7 @@ jobs:
       build_environment: macos-binary-libtorch-cxx11-abi
       # libtorch builds take a long time on github hosted runners
       timeout-minutes: 720
-      runs-on: macos-10.15
+      runs_on: macos-10.15
       # For sccache access (only on non-forked PRs)
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -150,7 +150,7 @@ jobs:
       build_environment: macos-binary-libtorch-cxx11-abi
       # libtorch builds take a long time on github hosted runners
       timeout-minutes: 720
-      runs-on: macos-10.15
+      runs_on: macos-10.15
       # For sccache access (only on non-forked PRs)
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -199,7 +199,7 @@ jobs:
       build_environment: macos-binary-libtorch-cxx11-abi
       # libtorch builds take a long time on github hosted runners
       timeout-minutes: 720
-      runs-on: macos-10.15
+      runs_on: macos-10.15
       # For sccache access (only on non-forked PRs)
     secrets:
       github-token: ${{ secrets.GITHUB_TOKEN }}
